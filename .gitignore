@@ -1,0 +1,82 @@
+# ══════════════════════════════════════════════════════════
+# AnemiaLens .gitignore
+# ══════════════════════════════════════════════════════════
+
+# ── Virtual Environment ──────────────────────────────────
+anemia_env/
+venv/
+env/
+.env/
+.venv/
+
+# ── Python Cache ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Trained Models (too large for GitHub) ────────────────
+saved_models/
+*.keras
+*.h5
+*.pb
+*.onnx
+*.tflite
+
+# ── Dataset (too large and potentially private) ──────────
+data/
+datasets/
+*.csv
+!requirements.txt
+
+# ── Results and Outputs ──────────────────────────────────
+results/
+outputs/
+logs/
+*.log
+
+# ── Jupyter Notebooks Checkpoints ────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDE and Editor Files ─────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ── Operating System Files ───────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Distribution / Packaging ─────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+*.manifest
+*.spec
+
+# ── Testing ──────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ── Misc ─────────────────────────────────────────────────
+*.bak
+*.tmp
+*.temp
+.cache/
