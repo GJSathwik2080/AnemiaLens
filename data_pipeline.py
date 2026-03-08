@@ -107,18 +107,37 @@ class DataPipeline:
     # ── Patient-level split ───────────────────────────────────
     @staticmethod
     def _patient_split(df: pd.DataFrame):
+        """
+        STRATIFIED SPLIT — ensures both anemic and healthy 
+        patients appear in train, val, and test sets proportionally.
+        """
         patients = df["patient_id"].unique()
+        
+        # Create a label for each patient (for stratification)
+        # anemic = 1 (Hb < 11.0), healthy = 0 (Hb >= 11.0)
+        patient_labels = df.groupby("patient_id")["hb_level"].first().apply(
+            lambda x: 1 if x < 11.0 else 0
+        )
+        
+        # Get labels in same order as patients array
+        labels_for_split = [patient_labels[p] for p in patients]
 
-        train_val_pts, test_pts = train_test_split(
+        # First split: train+val vs test (STRATIFIED)
+        train_val_pts, test_pts, train_val_labels, _ = train_test_split(
             patients,
+            labels_for_split,
             test_size=Config.TEST_RATIO,
             random_state=Config.RANDOM_STATE,
+            stratify=labels_for_split,
         )
+        
+        # Second split: train vs val (STRATIFIED)
         relative_val = Config.VAL_RATIO / (1 - Config.TEST_RATIO)
         train_pts, val_pts = train_test_split(
             train_val_pts,
             test_size=relative_val,
             random_state=Config.RANDOM_STATE,
+            stratify=train_val_labels,
         )
 
         splits = {
@@ -127,15 +146,19 @@ class DataPipeline:
             "test":  df[df["patient_id"].isin(test_pts)].copy(),
         }
 
-        # ---- Leak check ────────────────────────────────────
+        # Leak check
         ids = {k: set(v["patient_id"]) for k, v in splits.items()}
         assert not (ids["train"] & ids["val"]),  "LEAK: train ∩ val"
         assert not (ids["train"] & ids["test"]), "LEAK: train ∩ test"
         assert not (ids["val"]   & ids["test"]), "LEAK: val ∩ test"
 
+        # Print split info with class distribution
         for name, sdf in splits.items():
+            anemic = (sdf["hb_level"] < 11.0).sum()
+            healthy = (sdf["hb_level"] >= 11.0).sum()
             print(f"  {name:6s}  →  {len(ids[name]):3d} patients, "
-                  f"{len(sdf):4d} images")
+                  f"{len(sdf):4d} images  "
+                  f"(anemic: {anemic}, healthy: {healthy})")
 
         return splits["train"], splits["val"], splits["test"]
 
