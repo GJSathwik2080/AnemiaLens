@@ -274,31 +274,17 @@ def main():
     </div>
     """, unsafe_allow_html=True)
     
-    # Instructions in an organized way
-    with st.expander("📖 **How to Use This App** (Click to expand)", expanded=True):
+    # Instructions - Compact version
+    with st.expander("ℹ️ Instructions", expanded=False):
         st.markdown("""
-        ### 🎯 Quick Steps:
+        **Upload 3 images:**
+        - 👁️ Eye (inner eyelid)
+        - 💅 Nail (nail bed)  
+        - 🤚 Palm area
         
-        1. **Upload 3 Clear Images**:
-           - 👁️ **Eye (Conjunctiva)**: Take a photo of the inner eyelid (palpebral conjunctiva)
-           - 💅 **Nail**: Photograph your nail bed clearly
-           - 🤚 **Palm**: Capture the palm area of your hand
+        **Tips:** Clear photos with good lighting give best results.
         
-        2. **Image Quality Tips**:
-           - Use **good lighting** (natural light is best)
-           - Images should be **clear and in focus**
-           - **Close-up** photos work better than distant ones
-           - Supported formats: PNG, JPG, JPEG
-        
-        3. **Click "Analyze Images"** to run the AI screening
-        
-        4. **Review Your Results** with detailed predictions for each body part
-        
-        ### ⚠️ Important Disclaimer:
-        - This app is a **screening tool only** — not a medical diagnosis
-        - Results are **not a substitute** for a blood test (CBC)
-        - Always **consult a healthcare professional** for confirmation
-        - In case of severe symptoms, **seek immediate medical attention**
+        **⚠️ Important:** This is a screening tool only. Always confirm results with a blood test.
         """)
     
     st.markdown("---")
@@ -557,25 +543,13 @@ def main():
             
             st.markdown("---")
             
-            # WHAT TO DO NEXT
-            st.markdown("## 📋 Next Steps")
+            # Next steps (condensed)
+            st.markdown("### 📋 Recommended Actions")
             
             if combined_score > 0.5:
-                st.markdown("""
-                Based on this positive screening result:
-                1. **Schedule a blood test** with your doctor for confirmation (Complete Blood Count)
-                2. **Note any symptoms**: fatigue, shortness of breath, pale skin, dizziness
-                3. **Discuss results** with your healthcare provider
-                4. **Follow medical advice** for treatment or further evaluation
-                """)
+                st.info("🔴 **Schedule a blood test (CBC)** with your doctor for professional confirmation")
             else:
-                st.markdown("""
-                Based on this negative screening result:
-                1. Continue with **regular health check-ups**
-                2. Maintain a **balanced diet** rich in iron and B12
-                3. If you develop anemia symptoms, **schedule a blood test**
-                4. Share this screening result with your doctor during routine visits
-                """)
+                st.info("🟢 **Continue regular check-ups** and maintain a balanced diet")
         
         except Exception as e:
             st.error(f"❌ Error during analysis: {str(e)}")
