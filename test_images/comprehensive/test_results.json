@@ -1,0 +1,641 @@
+{
+  "healthy": {
+    "timestamp": "2026-04-14T19:42:09.741464",
+    "tests": [
+      {
+        "file": "conjunctiva_healthy.png",
+        "path": "test_images/comprehensive\\healthy\\conjunctiva\\conjunctiva_healthy.png",
+        "subcategory": "conjunctiva",
+        "modality": "conjunctiva",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.4741862118244171,
+            "confidence": 0.05162757635116577,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "nail": {
+            "prediction": 0.3603576719760895,
+            "confidence": 0.27928465604782104,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.8840954899787903,
+            "confidence": 0.7681909799575806,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "nail_healthy.png",
+        "path": "test_images/comprehensive\\healthy\\nail\\nail_healthy.png",
+        "subcategory": "nail",
+        "modality": "nail",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.40563303232192993,
+            "confidence": 0.18873393535614014,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "nail": {
+            "prediction": 0.3015805184841156,
+            "confidence": 0.3968389630317688,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.8241912722587585,
+            "confidence": 0.6483825445175171,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "palm_healthy.png",
+        "path": "test_images/comprehensive\\healthy\\palm\\palm_healthy.png",
+        "subcategory": "palm",
+        "modality": "palm",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.8292725086212158,
+            "confidence": 0.6585450172424316,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          },
+          "nail": {
+            "prediction": 0.5286636352539062,
+            "confidence": 0.0573272705078125,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "palm": {
+            "prediction": 0.7622395753860474,
+            "confidence": 0.5244791507720947,
+            "label": "ANEMIC",
+            "severity": "Moderate",
+            "emoji": "\ud83d\udfe0"
+          }
+        }
+      }
+    ]
+  },
+  "mild_anemia": {
+    "timestamp": "2026-04-14T19:42:12.038303",
+    "tests": [
+      {
+        "file": "conjunctiva_mild_anemia.png",
+        "path": "test_images/comprehensive\\mild_anemia\\conjunctiva\\conjunctiva_mild_anemia.png",
+        "subcategory": "conjunctiva",
+        "modality": "conjunctiva",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.8088513016700745,
+            "confidence": 0.6177026033401489,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          },
+          "nail": {
+            "prediction": 0.39920729398727417,
+            "confidence": 0.20158541202545166,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.8427457809448242,
+            "confidence": 0.6854915618896484,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "nail_mild_anemia.png",
+        "path": "test_images/comprehensive\\mild_anemia\\nail\\nail_mild_anemia.png",
+        "subcategory": "nail",
+        "modality": "nail",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.5482714176177979,
+            "confidence": 0.0965428352355957,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "nail": {
+            "prediction": 0.5174263715744019,
+            "confidence": 0.03485274314880371,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "palm": {
+            "prediction": 0.8436901569366455,
+            "confidence": 0.687380313873291,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "palm_mild_anemia.png",
+        "path": "test_images/comprehensive\\mild_anemia\\palm\\palm_mild_anemia.png",
+        "subcategory": "palm",
+        "modality": "palm",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.868269145488739,
+            "confidence": 0.736538290977478,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          },
+          "nail": {
+            "prediction": 0.5287687182426453,
+            "confidence": 0.05753743648529053,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "palm": {
+            "prediction": 0.8030928373336792,
+            "confidence": 0.6061856746673584,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      }
+    ]
+  },
+  "moderate_anemia": {
+    "timestamp": "2026-04-14T19:42:12.609455",
+    "tests": [
+      {
+        "file": "conjunctiva_moderate_anemia.png",
+        "path": "test_images/comprehensive\\moderate_anemia\\conjunctiva\\conjunctiva_moderate_anemia.png",
+        "subcategory": "conjunctiva",
+        "modality": "conjunctiva",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.7090067267417908,
+            "confidence": 0.41801345348358154,
+            "label": "ANEMIC",
+            "severity": "Moderate",
+            "emoji": "\ud83d\udfe0"
+          },
+          "nail": {
+            "prediction": 0.36631372570991516,
+            "confidence": 0.2673725485801697,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.820035994052887,
+            "confidence": 0.6400719881057739,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "nail_moderate_anemia.png",
+        "path": "test_images/comprehensive\\moderate_anemia\\nail\\nail_moderate_anemia.png",
+        "subcategory": "nail",
+        "modality": "nail",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.52482008934021,
+            "confidence": 0.04964017868041992,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "nail": {
+            "prediction": 0.32473036646842957,
+            "confidence": 0.35053926706314087,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.830446720123291,
+            "confidence": 0.660893440246582,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "palm_moderate_anemia.png",
+        "path": "test_images/comprehensive\\moderate_anemia\\palm\\palm_moderate_anemia.png",
+        "subcategory": "palm",
+        "modality": "palm",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.8729885816574097,
+            "confidence": 0.7459771633148193,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          },
+          "nail": {
+            "prediction": 0.5430200099945068,
+            "confidence": 0.08604001998901367,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "palm": {
+            "prediction": 0.8007922768592834,
+            "confidence": 0.6015845537185669,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      }
+    ]
+  },
+  "severe_anemia": {
+    "timestamp": "2026-04-14T19:42:13.216719",
+    "tests": [
+      {
+        "file": "conjunctiva_severe_anemia.png",
+        "path": "test_images/comprehensive\\severe_anemia\\conjunctiva\\conjunctiva_severe_anemia.png",
+        "subcategory": "conjunctiva",
+        "modality": "conjunctiva",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.6005299687385559,
+            "confidence": 0.20105993747711182,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "nail": {
+            "prediction": 0.40271708369255066,
+            "confidence": 0.19456583261489868,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.8420858979225159,
+            "confidence": 0.6841717958450317,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "nail_severe_anemia.png",
+        "path": "test_images/comprehensive\\severe_anemia\\nail\\nail_severe_anemia.png",
+        "subcategory": "nail",
+        "modality": "nail",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.5094297528266907,
+            "confidence": 0.018859505653381348,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "nail": {
+            "prediction": 0.3632710576057434,
+            "confidence": 0.2734578847885132,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.7767736315727234,
+            "confidence": 0.5535472631454468,
+            "label": "ANEMIC",
+            "severity": "Moderate",
+            "emoji": "\ud83d\udfe0"
+          }
+        }
+      },
+      {
+        "file": "palm_severe_anemia.png",
+        "path": "test_images/comprehensive\\severe_anemia\\palm\\palm_severe_anemia.png",
+        "subcategory": "palm",
+        "modality": "palm",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.8559775352478027,
+            "confidence": 0.7119550704956055,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          },
+          "nail": {
+            "prediction": 0.5108041763305664,
+            "confidence": 0.021608352661132812,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "palm": {
+            "prediction": 0.7643002271652222,
+            "confidence": 0.5286004543304443,
+            "label": "ANEMIC",
+            "severity": "Moderate",
+            "emoji": "\ud83d\udfe0"
+          }
+        }
+      }
+    ]
+  },
+  "edge_cases": {
+    "timestamp": "2026-04-14T19:42:13.805588",
+    "tests": [
+      {
+        "file": "blurred_conjunctiva.png",
+        "path": "test_images/comprehensive\\edge_cases\\blur\\blurred_conjunctiva.png",
+        "subcategory": "blur",
+        "modality": "conjunctiva",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.3196072578430176,
+            "confidence": 0.36078548431396484,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "nail": {
+            "prediction": 0.4766465127468109,
+            "confidence": 0.046706974506378174,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.7575578689575195,
+            "confidence": 0.5151157379150391,
+            "label": "ANEMIC",
+            "severity": "Moderate",
+            "emoji": "\ud83d\udfe0"
+          }
+        }
+      },
+      {
+        "file": "high_contrast_conjunctiva.png",
+        "path": "test_images/comprehensive\\edge_cases\\high_contrast\\high_contrast_conjunctiva.png",
+        "subcategory": "high_contrast",
+        "modality": "conjunctiva",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.559083104133606,
+            "confidence": 0.11816620826721191,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "nail": {
+            "prediction": 0.29784315824508667,
+            "confidence": 0.40431368350982666,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.9066617488861084,
+            "confidence": 0.8133234977722168,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "low_light_conjunctiva.png",
+        "path": "test_images/comprehensive\\edge_cases\\low_light\\low_light_conjunctiva.png",
+        "subcategory": "low_light",
+        "modality": "conjunctiva",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.7240429520606995,
+            "confidence": 0.4480859041213989,
+            "label": "ANEMIC",
+            "severity": "Moderate",
+            "emoji": "\ud83d\udfe0"
+          },
+          "nail": {
+            "prediction": 0.32244837284088135,
+            "confidence": 0.3551032543182373,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.8527277112007141,
+            "confidence": 0.7054554224014282,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "rotated_conjunctiva.png",
+        "path": "test_images/comprehensive\\edge_cases\\rotated\\rotated_conjunctiva.png",
+        "subcategory": "rotated",
+        "modality": "conjunctiva",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.6430184245109558,
+            "confidence": 0.2860368490219116,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "nail": {
+            "prediction": 0.3053267300128937,
+            "confidence": 0.38934653997421265,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.8442701101303101,
+            "confidence": 0.6885402202606201,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "zoomed_conjunctiva.png",
+        "path": "test_images/comprehensive\\edge_cases\\zoomed\\zoomed_conjunctiva.png",
+        "subcategory": "zoomed",
+        "modality": "conjunctiva",
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.5492441058158875,
+            "confidence": 0.0984882116317749,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "nail": {
+            "prediction": 0.5319721698760986,
+            "confidence": 0.06394433975219727,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "palm": {
+            "prediction": 0.829176127910614,
+            "confidence": 0.658352255821228,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      }
+    ]
+  },
+  "quality_issues": {
+    "timestamp": "2026-04-14T19:42:14.777642",
+    "tests": [
+      {
+        "file": "noisy_image.png",
+        "path": "test_images/comprehensive\\quality_issues\\artifacts\\noisy_image.png",
+        "subcategory": "artifacts",
+        "modality": null,
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.26835885643959045,
+            "confidence": 0.4632822871208191,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "nail": {
+            "prediction": 0.538149893283844,
+            "confidence": 0.07629978656768799,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "palm": {
+            "prediction": 0.8132570385932922,
+            "confidence": 0.6265140771865845,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "low_res_image.png",
+        "path": "test_images/comprehensive\\quality_issues\\low_resolution\\low_res_image.png",
+        "subcategory": "low_resolution",
+        "modality": null,
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.5004826188087463,
+            "confidence": 0.0009652376174926758,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "nail": {
+            "prediction": 0.40708255767822266,
+            "confidence": 0.1858348846435547,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.9087795615196228,
+            "confidence": 0.8175591230392456,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "overexposed_image.png",
+        "path": "test_images/comprehensive\\quality_issues\\overexposed\\overexposed_image.png",
+        "subcategory": "overexposed",
+        "modality": null,
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.5952017307281494,
+            "confidence": 0.19040346145629883,
+            "label": "ANEMIC",
+            "severity": "Mild",
+            "emoji": "\ud83d\udfe1"
+          },
+          "nail": {
+            "prediction": 0.3266376554965973,
+            "confidence": 0.3467246890068054,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.8806561231613159,
+            "confidence": 0.7613122463226318,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      },
+      {
+        "file": "underexposed_image.png",
+        "path": "test_images/comprehensive\\quality_issues\\underexposed\\underexposed_image.png",
+        "subcategory": "underexposed",
+        "modality": null,
+        "predictions": {
+          "conjunctiva": {
+            "prediction": 0.7212948799133301,
+            "confidence": 0.44258975982666016,
+            "label": "ANEMIC",
+            "severity": "Moderate",
+            "emoji": "\ud83d\udfe0"
+          },
+          "nail": {
+            "prediction": 0.37897083163261414,
+            "confidence": 0.24205833673477173,
+            "label": "HEALTHY",
+            "severity": "Normal",
+            "emoji": "\ud83d\udfe2"
+          },
+          "palm": {
+            "prediction": 0.8538332581520081,
+            "confidence": 0.7076665163040161,
+            "label": "ANEMIC",
+            "severity": "Severe",
+            "emoji": "\ud83d\udd34"
+          }
+        }
+      }
+    ]
+  }
+}
